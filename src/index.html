@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typing effects with WebGL Tutorial - DEMO #5</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="text-input" contenteditable="true"></div>
+    <div class="container"></div>
+
+    <!-- .intro element is here for the only purpose: When I embed this sandbox to
+    the Codrops article, the article page gets buggy with input autofocus.
+    Normally we want this to happen on page load: textInputEl.focus();
+    setCaretToEndOfInput(); but for embedded sandbox we do it on first click -->
+
+    <div
+      class="intro"
+      style="
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      click to start
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
